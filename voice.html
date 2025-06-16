@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移住者の声</title>
+    <link rel="stylesheet" href="css/voice.css" />
+    <script src="css/voice.js" defer></script>
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-container">
+            <div class="site-title-main">
+                <h2 class="site-title"><a href="index.html">寄り添うまち江別</a></h2>
+                <p>江別市に移住を考えている片親のためサイト</p>
+            </div>
+            <nav>
+                <ul class="main-nav font-japanese">
+                    <li>
+                        <a href="event.html">
+                            <img src="img/icon-event.png" alt="event">
+                            イベント
+                        </a>
+                    </li>
+                    <li>
+                        <a href="support.html">
+                            <img src="img/icon-support.png" alt="support">
+                            児童扶養手当
+                        </a>
+                    </li>
+                    <li>
+                        <a href="voice.html">
+                            <img src="img/icon-voice.png" alt="voice">
+                            移住者の声
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2 class="section-title">移住者の声</h2>
+            <section class="filters">
+                <form id="filter-form">
+                    <label for="age-filter" class="custom-label">年齢:</label>
+                    <select id="age-filter" name="age">
+                        <option value="all">すべて</option>
+                        <option value="10代">10代</option>
+                        <option value="30代">30代</option>
+                        <option value="40代">40代</option>
+                        <option value="50代">50代</option>
+                    </select>
+                    <label for="job-filter" class="custom-label">職業:</label>
+                    <select id="job-filter" name="job">
+                        <option value="all">すべて</option>
+                        <option value="会社員">会社員</option>
+                        <option value="公務員">公務員</option>
+                        <option value="自営業">自営業</option>
+                        <option value="学生">学生</option>
+                        <option value="パート・アルバイト">パート・アルバイト</option>
+                    </select>
+                    <button type="button" id="filter-button" class="custom-button">絞り込む</button>
+                </form>
+            </section>
+
+            <section class="results">
+                <div id="result-list"></div>
+            </section>
+
+            <section class="results">
+                <div class="review" data-id="1">
+                    <img src="img/42.jpg" alt="移住者イメージ1" />
+                    <div class="details">42歳 公務員</div>
+                    <strong>「子育て・趣味・仕事 '江別なら' 何でも揃います」</strong>
+                    <strong class="small">静岡県出身／あけぼの町在住</strong>
+                </div>
+                <div class="review" data-id="2">
+                    <img src="img/39.jpg" alt="移住者イメージ2" />
+                    <div class="details">36歳 自営業</div>
+                    <strong>「オーガニック食品を江別市に広めたい」</strong>
+                    <strong class="small">旭川市出身／大麻町在住</strong>
+                </div>
+                <div class="review" data-id="3">
+                    <img src="img/50.jpg" alt="移住者イメージ3" />
+                    <div class="details">50歳 パート・アルバイト</div>
+                    <strong>「子供も私も支えてくれる町」</strong>
+                    <strong class="small">江別市出身／野幌町在住</strong>
+                </div>
+                <div class="review" data-id="4">
+                    <img src="img/16.jpg" alt="移住者イメージ4" />
+                    <div class="details">16歳 学生</div>
+                    <strong>「受験の選択肢が広がる町」</strong>
+                    <strong class="small">函館市出身／緑ヶ丘在住</strong>
+                </div>
+                <div class="review" data-id="5">
+                    <img src="img/30.jpg" alt="移住者イメージ5" />
+                    <div class="details">30歳 会社員</div>
+                    <strong>「自然環境で仕事出来るのが最高です」</strong>
+                    <strong class="small">江別市出身／上江別在住</strong>
+                </div>
+                <div class="review" data-id="6">
+                    <img src="img/40.jpg" alt="移住者イメージ6" />
+                    <div class="details">40歳 パート・アルバイト</div>
+                    <strong>「江別に来てから生活の質が向上しました」</strong>
+                    <strong class="small">福岡県出身／高砂町在住</strong>
+                </div>
+                <div class="review" data-id="7">
+                    <img src="img/34.jpg" alt="移住者イメージ7" />
+                    <div class="details">34歳 公務員</div>
+                    <strong>「新たな挑戦の場がここにあります」</strong>
+                    <strong class="small">釧路市出身／豊幌美咲町在住</strong>
+                </div>
+                <div class="review" data-id="8">
+                    <img src="img/33.jpg" alt="移住者イメージ8" />
+                    <div class="details">33歳 パート・アルバイト</div>
+                    <strong>「夏はイベント、冬は雪原を楽しめます」</strong>
+                    <strong class="small">沖縄県出身／東野幌在住</strong>
+                </div>
+                <div class="review" data-id="9">
+                    <img src="img/32.jpg" alt="移住者イメージ9" />
+                    <div class="details">32歳 会社員</div>
+                    <strong>「ママ友同士の繋がりが増えました」</strong>
+                    <strong class="small">札幌市出身／文京台在住</strong>
+                </div>
+            </section>
+
+            <section>
+                <div class="modal-overlay"></div>
+                <div class="modal">
+                    <span class="close">&times;</span>
+                    <div class="modal-content"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="pagination">
+      <button class="page-number">1</button>
+      <button class="page-number">2</button>
+      <button class="page-number">3</button>
+      <button class="page-number">4</button>
+  </div>
+  <div class="btns">
+      <a class="btn" href="index.html">トップへ戻る</a>
+  </div>
+    <footer>
+      <div class="footer-container">
+              <p class="footer-address">
+              江別市（役所への行き方）<br>
+              <br>
+              〒067-8674 北海道江別市高砂町6番地<br>
+              Tel: 011-382-4141（代表）<br>
+              <br>
+              <a href="https://www.city.ebetsu.hokkaido.jp/soshiki/">組織別電話番号一覧</a> ｜ <a href="https://www.city.ebetsu.hokkaido.jp/soshiki/koucho/13388.html">お問い合わせはこちら</a><br>
+              <br>
+              開庁時間：月～金/8時45分～17時15分（祝日は閉庁）
+              </p>
+          <div class="about-map2">
+              <img src="img/hokkaido-map2.png" alt="北海道地図2">
+          </div>
+          <div class="background">
+            <div class="circle"></div>
+            <div class="circle large"></div>
+            <div class="circle large2"></div>
+            <div class="circle small"></div>
+            <div class="circle small2"></div>
+            <div class="circle small3"></div>
+
+            <div class="circle large right"></div>
+            <div class="circle large right2"></div>
+            <div class="circle small right"></div>
+            <div class="circle small right2"></div>
+        </div>
+      </div>
+  </footer>
+  </body>
+</html>
